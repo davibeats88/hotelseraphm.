@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Hospedagem</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+body {
+    background-image: url('fundo.jpg');
+    background-size: cover, contain;
+    background-position: center center;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    color: #fff;
+}
+footer {
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hotel Seraphm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/place/UniFacema/@-4.8642792,-43.3599133,17z/data=!3m1!4b1!4m6!3m5!1s0x78e923ca21895d7:0x2a354f9f21ac0aa1!8m2!3d-4.8642792!4d-43.3573384!16s%2Fg%2F11bv2nk1x7?entry=ttu"target="_blank">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/559982124383" target="_blank">Contatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guia.html">Hospedagem</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <a class="btn btn-outline-light my-2 my-sm-0" href="login.html">Login</a>
+                <a class="btn btn-outline-light my-2 my-sm-0 ml-2" href="register.html">Registrar</a>
+              </form>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <section class="hero">
+        <div class="container text-center">
+            <h1>Bem Vindo ao Hotel Seraphm</h1>
+            <p>Experiencia de luxo e conforto em um só hotel</p>
+            <a href="#rooms" class="btn btn-dark">Ver Quartos</a>
+        </div>
+    </section>
+
+    <section id="rooms" class="my-5">
+        <div class="text-center">
+          <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 1300px;">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="max-height: 500px;"> 
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="quarto casal 1.jpg" alt="Primeiro Slide" style="height: 600px; object-fit: cover;"> 
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="quarto triplo.jpg" alt="Segundo Slide" style="height: 600px; object-fit: cover;"> 
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="quarto familia premium.jpg" alt="Terceiro Slide" style="height: 600px; object-fit: cover;"> 
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="booking" class="my-5">
+        <div class="container">
+            <h2 class="text-center">Reserve a sua Estadia</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Nome</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nome">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCheckIn">Data de Check-In</label>
+                        <input type="date" class="form-control" id="inputCheckIn">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCheckOut">Data de Check-Out</label>
+                        <input type="date" class="form-control" id="inputCheckOut">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputRoomType">Tipo de Quarto</label>
+                    <select id="inputRoomType" class="form-control">
+                        <option selected>Tipo</option>
+                        <option>Casal</option>
+                        <option>Triplo</option>
+                        <option>Família</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-dark">Reservar</button>
+            </form>
+        </div>
+    </section>
+    <br>
+
+    <footer class="text-center">
+        <p>&copy; 2024 Hotel Seraphm. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

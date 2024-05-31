@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - Hotel Seraphm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('deck-hotel.jpg');
+            background-size: cover, contain;
+            background-position: center center;
+            background-repeat: no-repeat, no-repeat;
+            position: relative;
+        }
+        .register-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+        .register-container .form-control:focus {
+            box-shadow: none;
+            border-color: #007bff;
+        }
+        footer {
+            background-color: #212121;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hotel Seraphm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/place/UniFacema/@-4.8642792,-43.3599133,17z/data=!3m1!4b1!4m6!3m5!1s0x78e923ca21895d7:0x2a354f9f21ac0aa1!8m2!3d-4.8642792!4d-43.3573384!16s%2Fg%2F11bv2nk1x7?entry=ttu"target="_blank">Localização</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wa.me/559982124383" target="_blank">Contatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="guia.html">Hospedagem</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <a class="btn btn-outline-light my-2 my-sm-0" href="login.html">Login</a>
+                <a class="btn btn-outline-light my-2 my-sm-0 ml-2" href="register.html">Registrar</a>
+            </form>
+        </div>
+    </nav>
+    <div class="register-container">
+        <h2 class="text-center">Registrar</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn btn-dark btn-block">Registrar-se</button>
+        </form>
+        <p class="text-center mt-3">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+    <footer class="text-center">
+        <p>&copy; 2024 Hotel Seraphm. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
